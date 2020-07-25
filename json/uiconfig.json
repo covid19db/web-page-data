@@ -1,0 +1,42 @@
+{
+    "Countries": [
+        {
+            "Name" : "United Kingdom",
+            "Longitude" : -0.4, 
+            "Latitude" :  55.0,
+            "MapZoomLevel" : 6,
+            "AdminLevels" : [
+                { "Level" : 1,
+                  "Name": "Administration Level 1",
+                  "EpidemiologyFile" : "json/gbr1.json",
+                  "populationData" : true
+                },
+                { "Level" : 2,
+                  "Name": "Administration Level 2",
+                  "EpidemiologyFile" : "json/gbr2.json",
+                  "populationData" : false
+                },
+                { "Level" : 3,
+                  "Name": "Administration Level 3",
+                  "EpidemiologyFile" : "json/gbr3.json",
+                  "populationData" : true,
+                  "default" : true
+                }
+            ]
+        },
+        {
+            "Name" : "World",
+            "Longitude" : 40.0, 
+            "Latitude" :  31.35,
+            "MapZoomLevel" : 2,
+            "AdminLevels" : [
+                { "Level" : 0,
+                  "Name": "Country Level",
+                  "EpidemiologyFile" : "json/wor0.json",
+                  "populationData" : true,
+                  "default" : true
+                }
+            ]
+        }        
+    ]
+}
