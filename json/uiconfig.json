@@ -32,7 +32,7 @@
             "AdminLevels" : [
                 { "Level" : 0,
                   "Name": "Country Level",
-                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/hotspot-tracker-data/master/json/wor0.json",
+                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/hotspot-tracker-data/master/json/wor0.json.gz",
                   "populationData" : true,
                   "default" : true
                 }
