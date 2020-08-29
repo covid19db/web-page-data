@@ -18,7 +18,7 @@
                 },
                 { "Level" : 3,
                   "Name": "Administration Level 3",
-                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/hotspot-tracker-data/master/json/gbr3.json",
+                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/hotspot-tracker-data/master/json/gbr3.json.gz",
                   "populationData" : true,
                   "default" : true
                 }
