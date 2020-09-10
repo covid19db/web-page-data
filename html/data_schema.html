@@ -1,0 +1,872 @@
+    <div class="container_col_gray2" id="epi"><h4><b>Schema for EPIDEMIOLOGY table</b></h4></div>
+
+    <div class="container_col">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Data type</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SOURCE</td>
+          <td>VARCHAR</td>
+          <td>Data source</td>
+        </tr>
+        <tr>
+          <td>DATE</td>
+          <td>DATE</td>
+          <td>Day of the statistics</td>
+        </tr>
+        <tr>
+          <td>GID</td>
+          <td>ARRAY</td>
+          <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+        </tr>
+        <tr>
+          <td>COUNTRY</td>
+          <td>VARCHAR</td>
+          <td>English name for the country</td>
+        </tr>
+        <tr>
+          <td>COUNTRYCODE</td>
+          <td>VARCHAR(3)</td>
+          <td>ISO 3166-1 alpha-3 country codes</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_1</td>
+          <td>VARCHAR</td>
+          <td>First-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_2</td>
+          <td>VARCHAR</td>
+          <td>Second-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_3</td>
+          <td>VARCHAR</td>
+          <td>Third-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>TESTED</td>
+          <td>INT</td>
+          <td>Number of people tested [cumulative]</td>
+        </tr>
+        <tr>
+          <td>CONFIRMED</td>
+          <td>INT</td>
+          <td>Number of confirmed cases [cumulative]</td>
+        </tr>
+        <tr>
+          <td>DEAD</td>
+          <td>INT</td>
+          <td>Number of deaths [cumulative]</td>
+        </tr>
+        <tr>
+          <td>RECOVERED</td>
+          <td>INT</td>
+          <td>Number of confirmed who recovered [cumulative]</td>
+        </tr>
+        <tr>
+          <td>HOSPITALISED</td>
+          <td>INT</td>
+          <td>Number of confirmed who are/have been hospitalised [cumulative]</td>
+        </tr>
+        <tr>
+          <td>HOSPITALISED_ICU</td>
+          <td>INT</td>
+          <td>Number of confirmed who are/have been in the intensive care [cumulative]</td>
+        </tr>
+        <tr>
+          <td>QUARANTINED</td>
+          <td>INT</td>
+          <td>Number of confirmed with home quarantine [cumulative]</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+  <div class="container_col_gray2" id="gov"><h4><b>Schema for GOVERNMENT_RESPONSE table</b></h4></div>
+      <div class="container_col">
+      The government response data comes from the <a href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker">Coronavirus Government Response Tracker</a> assembled
+      by researchers from the Blavatnik School of Government, University of Oxford. The data are being collected from publicly available sources including news articles
+      and government press releases and briefings.
+      </div>
+      <div class="container_col">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Data type</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SOURCE</td>
+            <td>VARCHAR</td>
+            <td>Data source</td>
+          </tr>
+          <tr>
+            <td>DATE</td>
+            <td>DATE</td>
+            <td>Day of the statistics</td>
+          </tr>
+          <tr>
+            <td>GID</td>
+            <td>ARRAY</td>
+            <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+          </tr>
+          <tr>
+            <td>COUNTRY</td>
+            <td>VARCHAR</td>
+            <td>English name for the country</td>
+          </tr>
+          <tr>
+            <td>COUNTRYCODE</td>
+            <td>VARCHAR(3)</td>
+            <td>ISO 3166-1 alpha-3 country codes</td>
+          </tr>
+          <tr>
+            <td>ADM_AREA_1</td>
+            <td>VARCHAR</td>
+            <td>First-level administrative country subdivision</td>
+          </tr>
+          <tr>
+            <td>ADM_AREA_2</td>
+            <td>VARCHAR</td>
+            <td>Second-level administrative country subdivision</td>
+          </tr>
+          <tr>
+            <td>ADM_AREA_3</td>
+            <td>VARCHAR</td>
+            <td>Third-level administrative country subdivision</td>
+          </tr>
+          <tr>
+
+            <tr>
+              <td>ADM_AREA_3</td>
+              <td>VARCHAR</td>
+              <td>Third-level administrative country subdivision</td>
+            </tr>
+            <tr>
+
+            <tr>
+              <td>C1_SCHOOL_CLOSING </td>
+              <td>INT</td>
+              <td>Record closings of schools and universities</td>
+            </tr>
+
+            <tr>
+              <td>C1_FLAG </td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C2_WORKPLACE_CLOSING</td>
+              <td>INT</td>
+              <td>Record closings of workplaces</td>
+            </tr>
+
+            <tr>
+              <td>C2_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C3_CANCEL_PUBLIC_EVENTS</td>
+              <td>INT</td>
+              <td>Record cancelling public events</td>
+            </tr>
+
+            <tr>
+              <td>C3_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C4_RESTRICTIONS_ON_GATHERINGS</td>
+              <td>INT</td>
+              <td>Record limits on private gatherings</td>
+            </tr>
+
+            <tr>
+              <td>C4_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C5_CLOSE_PUBLIC_TRANSPORT</td>
+              <td>INT</td>
+              <td>Record closing of public transport</td>
+            </tr>
+
+            <tr>
+              <td>C5_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C6_STAY_AT_HOME_REQUIREMENTS</td>
+              <td>INT</td>
+              <td>Record orders to "shelter-in-place" and otherwise confine to the home</td>
+            </tr>
+
+            <tr>
+              <td>C6_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C7_RESTRICTIONS_ON_INTERNAL_MOVEMENT</td>
+              <td>INT</td>
+              <td>Record restrictions on internal movement between cities/regions</td>
+            </tr>
+
+            <tr>
+              <td>C7_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>C8_INTERNATIONAL_TRAVEL_CONTROLS</td>
+              <td>INT</td>
+              <td>Record restrictions on international travel. Note: this records policy for foreign travellers, not citizens</td>
+            </tr>
+
+
+            <tr>
+              <td>E1_INCOME_SUPPORT</td>
+              <td>INT</td>
+              <td>Record if the government is providing direct cash payments to people who lose their jobs or cannot work. Note: only includes payments to firms if explicitly linked to payroll/salaries</td>
+            </tr>
+
+            <tr>
+              <td>E1_FLAG</td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>E2_DEBTCONTRACT_RELIEF</td>
+              <td>INT</td>
+              <td>Record if the government is freezing financial obligations for households (eg stopping loan repayments, preventing services like water from stopping, or banning evictions)</td>
+            </tr>
+
+            <tr>
+              <td>E3_FISCAL_MEASURES </td>
+              <td>FLOAT</td>
+              <td>Announced economic stimulus spending. Note: only record amount additional to previously announced spendings</td>
+            </tr>
+
+            <tr>
+              <td>E4_INTERNATIONAL_SUPPORT</td>
+              <td>FLOAT</td>
+              <td>Announced offers of Covid-19 related aid spending to other countries. Note: only record amount additional to previously announced spending</td>
+            </tr>
+
+            <tr>
+              <td>H1_PUBLIC_INFORMATION_CAMPAIGNS</td>
+              <td>INT</td>
+              <td>Record presence of public info campaigns</td>
+            </tr>
+
+            <tr>
+              <td>H1_FLAG </td>
+              <td>INT</td>
+              <td>Binary flag for geographic scope</td>
+            </tr>
+
+            <tr>
+              <td>H2_TESTING_POLICY</td>
+              <td>INT</td>
+              <td>Record government policy on who has access to testing. Note: this records policies about testing for current infection (PCR tests) not testing for immunity (antibody test)</td>
+            </tr>
+
+            <tr>
+              <td>H3_CONTACT_TRACING</td>
+              <td>INT</td>
+              <td>Record government policy on contact tracing after a positive diagnosis</td>
+            </tr>
+
+            <tr>
+              <td>H4_EMERGENCY_INVESTMENT_IN_HEALTHCARE </td>
+              <td>FLOAT</td>
+              <td>Announced short term spending on healthcare system, e.g. hospitals, masks, etc. Note: only record amount additional to previously announced spending</td>
+            </tr>
+
+            <tr>
+              <td>H5_INVESTMENT_IN_VACCINES</td>
+              <td>FLOAT</td>
+              <td>Announced public spending on Covid-19 vaccine development. Note: only record amount additional to previously announced spending</td>
+            </tr>
+
+            <tr>
+              <td>M1_WILDCARD</td>
+              <td>VARCHAR</td>
+              <td>Record policy announcements that do not fit anywhere else</td>
+            </tr>
+
+            <tr>
+              <td>STRINGENCY_INDEX</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>STRINGENCY_INDEXFORDISPLAY</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>STRINGENCY_LEGACY_INDEX</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>STRINGENCY_LEGACY_INDEXFORDISPLAY </td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>GOVERNMENT_RESPONSE_INDEX</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>GOVERNMENT_RESPONSE_INDEX_FOR_DISPLAY</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>CONTAINMENT_HEALTH_INDEX</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>CONTAINMENT_HEALTH_INDEX_FOR_DISPLAY</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>ECONOMIC_SUPPORT_INDEX</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+              <td>ECONOMIC_SUPPORT_INDEX_FOR_DISPLAY</td>
+              <td>FLOAT</td>
+              <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md#dealing-with-gaps-in-the-data-for-display-purposes">Calculated as a function of the individual indicators</a></td>
+            </tr>
+
+            <tr>
+            <td>ACTIONS</td>
+            <td>JSONB</td>
+            <td>Raw response from Covid Tracker API <a href="https://covidtracker.bsg.ox.ac.uk/about-api">Covid Tracker API</a>
+              containing all above
+              indicators with full description stored in JSON format</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+
+
+      <div class="container_col_gray2" id="cou"><h4><b>Schema for COUNTRY_STATISTICS table</b></h4></div>
+
+      <div class="container_col">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Data type</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SOURCE</td>
+            <td>VARCHAR</td>
+            <td>Data source</td>
+          </tr>
+          <tr>
+            <td>YEAR</td>
+            <td>INT</td>
+            <td>Day of the statistics</td>
+          </tr>
+          <tr>
+            <td>GID</td>
+            <td>ARRAY</td>
+            <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+          </tr>
+          <tr>
+            <td>COUNTRY</td>
+            <td>VARCHAR</td>
+            <td>English name for the country</td>
+          </tr>
+          <tr>
+            <td>COUNTRYCODE</td>
+            <td>VARCHAR(3)</td>
+            <td>ISO 3166-1 alpha-3 country codes</td>
+          </tr>
+          <tr>
+            <td>ADM_LEVEL</td>
+            <td>VARCHAR</td>
+            <td>Aggregation level, 0 for World Bank and Integrated Value Survey by country, 1 for Integrated Value Survey by region</td>
+          </tr>
+          <tr>
+            <td>SAMPLESIZE</td>
+            <td>VARCHAR</td>
+            <td>Number of questions for Integrated Value Survey, -1 for World Bank</td>
+          </tr>
+          <tr>
+            <td>PROPERTIES</td>
+            <td>VARCHAR</td>
+            <td>Dictionary containing the region/country statistics.
+              For the full details on
+              included variables consider the hyperlink above</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+
+
+
+
+
+
+    <div class="container_col_gray2" id="mob"><h4><b>Schema for MOBILITY table</b></h4></div>
+
+
+    <div class="container_col">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Data type</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SOURCE</td>
+          <td>VARCHAR</td>
+          <td>Data source</td>
+        </tr>
+        <tr>
+          <td>DATE</td>
+          <td>DATE</td>
+          <td>Day of the statistics</td>
+        </tr>
+        <tr>
+          <td>GID</td>
+          <td>ARRAY</td>
+          <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+        </tr>
+        <tr>
+          <td>COUNTRY</td>
+          <td>VARCHAR</td>
+          <td>English name for the country</td>
+        </tr>
+        <tr>
+          <td>COUNTRYCODE</td>
+          <td>VARCHAR(3)</td>
+          <td>ISO 3166-1 alpha-3 country codes</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_1</td>
+          <td>VARCHAR</td>
+          <td>First-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_2</td>
+          <td>VARCHAR</td>
+          <td>Second-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_3</td>
+          <td>VARCHAR</td>
+          <td>Third-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>TRANSIT_STATIONS</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported by Google for places like public transport hubs such as subway, bus, and train stations</td>
+        </tr>
+        <tr>
+          <td>RESIDENTIAL</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported by Google for places of residence
+          </td>
+        </tr>
+        <tr>
+          <td>WORKPLACE</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported by Google for places of work</td>
+        </tr>
+        <tr>
+          <td>PARKS</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported by Google for places like local parks, national parks, public beaches, marinas, dog parks, plazas, and public gardens</td>
+        </tr>
+        <tr>
+          <td>RETAIL_RECREATION</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported Google for places like restaurants, cafes, shopping centers, theme parks, museums, libraries, and movie theaters</td>
+        </tr>
+        <tr>
+          <td>GROCERY_FARMACY</td>
+          <td>FLOAT</td>
+          <td>Mobility trends reported by Google for places like grocery markets, food warehouses, farmers markets, specialty food shops, drug stores, and pharmacies</td>
+        </tr>
+        <tr>
+          <td>TRANSIT</td>
+          <td>FLOAT</td>
+          <td>The change in volume reported by Apple of people taking public transit in their communities</td>
+        </tr>
+        <tr>
+          <td>WALKING</td>
+          <td>FLOAT</td>
+          <td>The change in volume reported by Apple of people walking in their communitie</td>
+        </tr>
+        <tr>
+          <td>DRIVING</td>
+          <td>FLOAT</td>
+          <td>The change in volume reported by Apple of people driving taking public transit in their communities</td>
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="container_col_gray2" id="wea"><h4><b>Schema for WEATHER table</b></h4></div>
+<div class="container_col">
+We aggregated the daily weather data from <a href="https://www.informaticslab.co.uk/">Met Office Informatics LAB</a>
+(for more details see <a href="news.html">Data Sources</a>)
+at the second <a href="https://gadm.org"> GADM</a> level for every country
+in the World. For each Level-2 GID region all the points in the grid that are contained in the region
+have been located. Then for a fixed Level-2 GID region and given variable (e.g. maximum daily precipitation,
+minimum daily temperature etc.) the average and standard deviation of the considered variable in
+those grid points is reported.
+</div>
+
+    <div class="container_col">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Data type</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DATE</td>
+          <td>DATE</td>
+          <td>Day of the statistics</td>
+        </tr>
+        <tr>
+          <td>GID</td>
+          <td>VARCHAR</td>
+          <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+        </tr>
+        <tr>
+          <td>COUNTRY</td>
+          <td>VARCHAR</td>
+          <td>English name for the country</td>
+        </tr>
+        <tr>
+          <td>COUNTRYCODE</td>
+          <td>VARCHAR(3)</td>
+          <td>ISO 3166-1 alpha-3 country codes</td>
+        </tr>
+        <tr>
+          <td>PRECIP_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum precipitation</td>
+        </tr>
+        <tr>
+          <td>PRECIP_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum precipitation </td>
+        </tr>
+        <tr>
+          <td>PRECIP_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily mean precipitation</td>
+        </tr>
+        <tr>
+          <td>PRECIP_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily mean precipitation </td>
+        </tr>
+
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum specific humidity</td>
+        </tr>
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum specific humidity</td>
+        </tr>
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily mean specific humidity</td>
+        </tr>
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily mean specific humidity</td>
+        </tr>
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MIN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily minimum specific humidity</td>
+        </tr>
+        <tr>
+          <td>SPECIFIC_HUMIDITY_MIN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily minimum specific humidity</td>
+        </tr>
+
+        <tr>
+          <td>SHORT_WAVE_RADIATION_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum short wave radiation</td>
+        </tr>
+        <tr>
+          <td>SHORT_WAVE_RADIATION_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum short wave radiation</td>
+        </tr>
+        <tr>
+          <td>SHORT_WAVE_RADIATION_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily minimum short wave radiation</td>
+        </tr>
+        <tr>
+          <td>SHORT_WAVE_RADIATION_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily minimum short wave radiation</td>
+        </tr>
+
+        <tr>
+          <td>TEMPERATURE_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum temperature</td>
+        </tr>
+        <tr>
+          <td>TEMPERATURE_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum temperature</td>
+        </tr>
+        <tr>
+          <td>TEMPERATURE_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily mean temperature</td>
+        </tr>
+        <tr>
+          <td>TEMPERATURE_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily mean temperature</td>
+        </tr>
+        <tr>
+          <td>TEMPERATURE_MIN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily minimum temperature</td>
+        </tr>
+        <tr>
+          <td>TEMPERATURE_MIN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily minimum temperature </td>
+        </tr>
+
+
+        <tr>
+          <td>WINDGUST_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum wind gust</td>
+        </tr>
+        <tr>
+          <td>WINDGUST_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum wind gust</td>
+        </tr>
+        <tr>
+          <td>WINDGUST_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily mean wind gust</td>
+        </tr>
+        <tr>
+          <td>WINDGUST_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily mean wind gust</td>
+        </tr>
+        <tr>
+          <td>WINDGUST_MIN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily minimum wind gust</td>
+        </tr>
+        <tr>
+          <td>WINDGUST_MIN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily minimum wind gust</td>
+        </tr>
+
+
+        <tr>
+          <td>WINDSPEED_MAX_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily maximum wind speed</td>
+        </tr>
+        <tr>
+          <td>WINDSPEED_MAX_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily maximum wind speed</td>
+        </tr>
+        <tr>
+          <td>WINDSPEED_MEAN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily mean wind speed</td>
+        </tr>
+        <tr>
+          <td>WINDSPEED_MEAN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily mean wind speed</td>
+        </tr>
+        <tr>
+          <td>WINDSPEED_MIN_AVG</td>
+          <td>FLOAT</td>
+          <td>Average of the daily minimum wind speed</td>
+        </tr>
+        <tr>
+          <td>WINDSPEED_MIN_STD</td>
+          <td>FLOAT</td>
+          <td>Standard deviation of the daily minimum wind speed</td>
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+
+    <div class="container_col_gray2" id="adm"><h4><b>Schema for ADMINISTRATIVE_DIVISION table</b></h4></div>
+
+    <div class="container_col">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Data type</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GID</td>
+          <td>VARCHAR</td>
+          <td>Unique geographical ID, for more details see <a href="https://gadm.org"> GADM</a></td>
+        </tr>
+        <tr>
+          <td>COUNTRY</td>
+          <td>VARCHAR</td>
+          <td>English name for the country</td>
+        </tr>
+        <tr>
+          <td>COUNTRYCODE</td>
+          <td>VARCHAR(3)</td>
+          <td>ISO 3166-1 alpha-3 country codes</td>
+        </tr>
+        <tr>
+          <td>COUNTRYCODE_ALPHA2</td>
+          <td>VARCHAR</td>
+          <td>ISO 3166-1 alpha-2 country codes</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_1</td>
+          <td>VARCHAR</td>
+          <td>First-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_1_CODE</td>
+          <td>VARCHAR</td>
+          <td>First-level administrative country code subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_2</td>
+          <td>VARCHAR</td>
+          <td>Second-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_2_CODE</td>
+          <td>VARCHAR</td>
+          <td>Second-level administrative country code subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_3</td>
+          <td>VARCHAR</td>
+          <td>Third-level administrative country subdivision</td>
+        </tr>
+        <tr>
+          <td>ADM_AREA_3_CODE</td>
+          <td>VARCHAR</td>
+          <td>Third-level administrative country code subdivision</td>
+        </tr>
+        <tr>
+          <tr>
+            <td>ADM_LEVEL</td>
+            <td>INTEGER</td>
+            <td>0 - for countries level, 1 - for regions etc.</td>
+          </tr>
+        <tr>
+          <td>LATITUDE</td>
+          <td>FLOAT</td>
+          <td>Geographic coordinate of region's centroid</td>
+        </tr>
+        <tr>
+          <td>LONGTITUDE</td>
+          <td>FLOAT</td>
+          <td>Geographic coordinate of region's centroid</td>
+        </tr>
+        <tr>
+          <td>PROPERTIES</td>
+          <td>JSON</td>
+          <td>Additional attributes describing region</td>
+        </tr>
+        <tr>
+          <td>GEOMETRY</td>
+          <td>GEOMETRY</td>
+          <td>Polygon describing geographical area</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
