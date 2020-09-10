@@ -1,494 +1,512 @@
-
-     <div class="container_col_gray2" id="epi"><h4><b>Data sources for EPIDEMIOLOGY table</h4></b> </div>
-     <div class="container_col">
-         <p>
-           We have included or currently working on including the following sources:
-         </p>
-       <table class="table">
-           <tr>
-             <th>Country</th>
-             <th>Source code</th>
-             <th>Source</th>
-             <th>Features</th>
-             <th>Terms of Use</th>
-           </tr>
-
-           <tr>
-             <td>World</td>
-             <td>WRD_ECDC</td>
-             <td><a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Prevention and Control</a></td>
-             <td>confirmed, dead, recovered</td>
-             <td><a href="https://www.ecdc.europa.eu/en/copyright">ECDC Copyright</a></td>
-           </tr>
-
-           <tr>
-             <td>Argentina</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed, dead, ecovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Australia</td>
-             <td>AUS_C1A</td>
-             <td><a href="https://github.com/covid-19-au/covid-19-au.github.io">covid-19-au</a></td>
-             <td>tested, confirmed, dead,recovered, hospitalised, hospitalised_icu</td>
-             <td><a href="https://github.com/covid-19-au/covid-19-au.github.io">For educational and academic research purposes</a></td>
-           </tr>
-
-           <tr>
-             <td>Austria</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>tested, confirmed,  dead, recovered, hospitalised, hospitalised_icu</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Belgium</td>
-             <td>BEL_LE</td>
-             <td><a href="https://github.com/eschnou/covid19-be">covid19-be</a></td>
-             <td>tested, confirmed,  dead, recovered, hospitalised, hospitalised_icu</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">CC0 1.0 Universal</a></td>
-           </tr>
-
-           <tr>
-             <td>Brazil</td>
-             <td>BRA_MSHM</td>
-             <td><a href="https://github.com/elhenrico/covid19-Brazil-timeseries">covid19-Brazil-timeseries</a></td>
-             <td>confirmed (country-level), dead (country-level, adm_area_1)</td>
-             <td><a href="https://github.com/elhenrico/covid19-Brazil-timeseries/blob/master/README.md#public-domain-and-open-data">Public Domain</a></td>
-           </tr>
-
-           <tr>
-             <td>Brazil</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Canada</td>
-             <td>CAN_GOV</td>
-             <td><a href="https://www.canada.ca/en/public-health.html">Public Health Canada</a></td>
-             <td>tested, confirmed, dead, recovered</td>
-             <td><a href="https://www.canada.ca/en/transparency/terms.html">Attribution required</a></td>
-           </tr>
-
-           <tr>
-             <td>Chile</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>China</td>
-             <td>CHN_ICL</td>
-             <td><a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/">Imperial College London, COVID-19 Response Team</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td>with permission</td>
-           </tr>
-
-           <tr>
-             <td>Czech Republic</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Dominican Republic</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Ecuador</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>France</td>
-             <td>FRA_SPFCG</td>
-             <td><a href="https://github.com/cedricguadalupe/FRANCE-COVID-19">Cédric Guadalupe (Agence Regionale de Sante and others)</a></td>
-             <td>confirmed, recovered, dead</td>
-             <td><a href="https://github.com/cedricguadalupe/FRANCE-COVID-19/blob/master/LICENSE">GPL 3.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Germany</td>
-             <td>DEU_JPGG</td>
-             <td><a href="https://github.com/jgehrcke/covid-19-germany-gae">Jan-Philip Gehrcke (Gesundheitsaemter)</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://github.com/jgehrcke/covid-19-germany-gae/blob/master/LICENSE  ">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Germany</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Hungary</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed, dead, recovered, tested, quarantined</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>India</td>
-             <td>IND_COVIND</td>
-             <td><a href="https://api.covid19india.org/">COVID19india</a></td>
-             <td>tested, confirmed, recovered, dead</td>
-             <td><a href="https://github.com/covid19india/api/blob/master/LICENSE">GPL 3.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Indonesia</td>
-             <td>IDN_GTPPC</td>
-             <td><a href="https://covid19.go.id/">COVID19.go</a></td>
-             <td>confirmed, dead, recovered</td>
-             <td><a href="">-</a></td>
-           </tr>
-
-           <tr>
-             <td>Ireland</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Italy</td>
-             <td>ITA_PC</td>
-             <td><a href="https://github.com/pcm-dpc/COVID-19">Protezione Civile</a></td>
-             <td>tested, confirmed, recovered, dead, hospitalised, ICU, quarantined</td>
-             <td><a href="https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE">CC BY 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Italy</td>
-             <td>ITA_PCDM</td>
-             <td><a href="https://github.com/DavideMagno/ItalianCovidData">Davide Magno (Protezione Civile)</a></td>
-             <td>tested, confirmed,  dead, recovered, hospitalised, ICU, quarantined</td>
-             <td><a href="https://github.com/DavideMagno/ItalianCovidData/blob/master/LICENSE">CC0 1.0 Universal</a><td>
-           </tr>
-
-           <tr>
-             <td>Japan</td>
-             <td>JPN_C1JACD</td>
-             <td><a href="https://github.com/code4sabae/covid19">code4sabae/covid19s</a></td>
-             <td>tested, confirmed, recovered, dead, hospitalised, hospitalised_icu</td>
-             <td><a href="https://github.com/code4sabae/covid19">CC BY</a></td>
-           </tr>
-
-           <tr>
-             <td>Malaysia</td>
-             <td>MYS_MSYS</td>
-             <td><a href="https://github.com/ynshung/covid-19-malaysia">covid-19-malaysia</a></td>
-             <td>confirmed (country-level, adm_area_1), dead (country-level), hospitalised (country-level)</td>
-             <td><a href="https://github.com/ynshung/covid-19-malaysia/blob/master/LICENSE">Public Domain Dedication and License v1.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Mexico</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Netherlands</td>
-             <td>NLD_CW</td>
-             <td><a href="https://github.com/J535D165/CoronaWatchNL/tree/master/data">CoronaWatchNL</a></td>
-             <td>confirmed (country-level), dead (country-level), hospitalised (country-level)</td>
-             <td><a href="https://github.com/J535D165/CoronaWatchNL">CC0</a></td>
-           </tr>
-
-           <tr>
-             <td>Nigeria</td>
-             <td>NGA_CDC</td>
-             <td><a href="https://covid19.ncdc.gov.ng/">covid19.ncdc.gov.ng</a></td>
-             <td>confirmed, recovered, dead</td>
-             <td><a href="">-</a></td>
-           </tr>
-
-
-           <tr>
-             <td>Norway</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Pakistan</td>
-             <td>PAK_GOV</td>
-             <td><a href="https://datastudio.google.com/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/kyNJB">National Information Technology Boards</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href=""></a></td>
-           </tr>
-
-           <tr>
-             <td>Peru</td>
-             <td>LAT_DSRP</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a></td>
-             <td>confirmed,  dead, recovered</td>
-             <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Poland</td>
-             <td>POL_WIKI</td>
-             <td><a href="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Poland">Wikipedia</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://www.wikidata.org/wiki/Wikidata:Licensing">CC0</a></td>
-           </tr>
-
-           <tr>
-             <td>Poland</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Portugal</td>
-             <td>POR_MSDS</td>
-             <td><a href="https://github.com/dssg-pt/covid19pt-data">dssg-pt</a></td>
-             <td>tested, confirmed, recovered, dead, hospitalised, ICU, quarantined</td>
-             <td><a href="https://github.com/dssg-pt/covid19pt-data">MIT</a></td>
-           </tr>
-
-
-           <tr>
-             <td>Slovenia</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>tested, confirmed, dead, hospitalised, hospitalised_icu</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Sweden</td>
-             <td>SWE_GM</td>
-             <td><a href="https://github.com/elinlutz/gatsby-map/tree/master/src/data/time_series">Elin Lütz</a></td>
-             <td>confirmed (country-level, adm_area_1), dead (country-level, adm_area_1)</td>
-             <td><a href="https://github.com/elinlutz/gatsby-map/blob/master/LICENSE">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>Sweden</td>
-             <td>SWE_SIR</td>
-             <td><a href="https://portal.icuregswe.org/siri/report/corona.inrapp">SIR</a></td>
-             <td>hospitalised_icu</td>
-             <td><a href="https://www.icuregswe.org/en/data--results/data-output-portal/">SIR Copyright</a></td>
-           </tr>
-
-           <tr>
-             <td>Sweden</td>
-             <td>EU_ZH</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
-             <td>confirmed, dead, hospitalised_icu</td>
-             <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>South Korea</td>
-             <td>KOR_DS4C</td>
-             <td><a href="https://github.com/jihoo-kim/Data-Science-for-COVID-19"> Jihoo-Kim</a></td>
-             <td>tested, confirmed, recovered, dead</td>
-             <td><a href="https://github.com/jihoo-kim/Data-Science-for-COVID-19">CC BY-NC-SA 4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Spain</td>
-             <td>ESP_MSVP</td>
-             <td><a href="https://raw.githubusercontent.com/victorvicpal/COVID19_es/master/data/final_data/dataCOVID19_es.csv">Victor Vincente Palacios</a></td>
-             <td>confirmed, recovered, dead, hospitalised, ICU</td>
-             <td><a href="https://github.com/victorvicpal/COVID19_es/blob/master/LICENSE">Apache License 2.0</a></td>
-           </tr>
-
-           <tr>
-             <td>Thailand</td>
-             <td>THA_STAT</td>
-             <td><a href="https://covid19.th-stat.com/en/api">Department of Disease Control</a></td>
-             <td>confirmed, recovered, dead, hospitalised</td>
-             <td><a href="https://data.go.th/en/dataset/covid-19-daily">DGA Open Government License</a></td>
-           </tr>
-
-           <tr>
-             <td>Turkey</td>
-             <td>TUR_MHOE</td>
-             <td><a href="https://covid19.th-stat.com/en/api">Department of Disease Control</a></td>
-             <td>tested, cases, dead, recovered</td>
-             <td><a href="https://github.com/ozanerturk/covid19-turkey-api/blob/master/LICENSE">MIT</a></td>
-           </tr>
-
-           <tr>
-             <td>United Kingdom</td>
-             <td>GBR_PHTW</td>
-             <td><a href="https://github.com/tomwhite/covid-19-uk-data">Tom White</a></td>
-             <td>tested, confirmed, dead</td>
-             <td><a href="https://github.com/tomwhite/covid-19-uk-data/blob/master/LICENSE.txt">The Unlicense</a></td>
-           </tr>
-
-           <tr>
-             <td>United Kingdom</td>
-             <td>GBR_PHE</td>
-             <td><a href="https://coronavirus.data.gov.uk/">Public Health England</a></td>
-             <td>tested, confirmed, dead</td>
-             <td><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0  </a></td>
-           </tr>
-
-           <tr>
-             <td>United States</td>
-             <td>USA_CTP</td>
-             <td><a href="https://covidtracking.com/api">COVID Tracking Project</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://covidtracking.com/license">CC BY-NC-4.0</a></td>
-           </tr>
-
-           <tr>
-             <td>United States</td>
-             <td>USA_NYT</td>
-             <td><a href="https://github.com/nytimes/covid-19-data">The New York Times</a></td>
-             <td>confirmed, dead</td>
-             <td><a href="https://github.com/nytimes/covid-19-data/blob/master/LICENSE">Attribution required, non-commercial use</a></td>
-           </tr>
-         </table>
-       </div>
-
-
-
-
-       <div class="container_col_gray2" id="gov"><h4><b>Data sources for GOVERMENT_RESPONSE table</h4></b> </div>
-       <div class="container_col">
-           <p>
-             We have included or currently working on including the following sources:
-           </p>
-         <table class="table">
-             <tr>
-               <th>Source</th>
-               <th>Example Features</th>
-               <th>Terms of Use</th>
-             </tr>
-             <tr>
-               <td><a href="https://www.bsg.ox.ac.uk/research/research-projects/oxford-covid-19-government-response-tracker"> Oxford COVID-19 government response tracker</a></td>
-               <td>SchoolClosing, WorkplaceClosing, CancelPublicEvents, ClosePublicTransport</td>
-             <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/LICENSE.txt">CC BY 4.0</a></td>
-             </tr>
-           </table>
-           <div class="my_citation3">
-                        <p>If you use GOVERNMENT_RESPONSE table please also cite:</p>
-
-                      <p>Hale, Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.</p>
-           </div>
-         </div>
-
-
-
-
-
-         <div class="container_col_gray2"><h4><b>Data sources for COUNTRY_STATISTICS table</h4></b> </div>
-         <div class="container_col">
-             <p>
-               We have included or currently working on including the following sources:
-             </p>
-           <table class="table">
-               <tr>
-                 <th>Source</th>
-                 <th>Terms of Use</th>
-               </tr>
-               <tr>
-                 <td><a href=""> World Bank</a></td>
-                 <td><a href="https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets">CC BY 4.0</a></td>
-               </tr>
-               <tr>
-                 <td><a href="http://www.worldvaluessurvey.org/wvs.jsp"> World Value Survey</a></td>
-                 <td>with permission</td>
-               </tr>
-               <tr>
-                 <td><a href="https://europeanvaluesstudy.eu/">European Value Study</a></td>
-                 <td>with permission</td>
-               </tr>
-             </table>
-
-
-              <div class="my_citation3">
-                           <p>If you use COUNTRY_STATISTICS table please also cite:</p>
-
-                         <p>Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, M. Lagos,
-                         P. Norris, E. Ponarin & B. Puranen et al. (eds.). 2014. World Values Survey: Round Six - Country-Pooled Datafile Version: http://www.worldvaluessurvey.org/WVSDocumentationWV6.jsp.
-                         Madrid: JD Systems Institute.</p>
-
-                         <p>Gedeshi, Ilir, Zulehner, Paul M., Rotman, David, Swyngedouw, Marc, Voyé, Liliane, Fotev, Georgy, Baloban, Josip,...(2016).
-                           European Values Study 2008: Integrated Dataset (EVS 2008). GESIS Datenarchiv, Köln. ZA4800 Datenfile Version 4.0.0, https://doi.org/10.4232/1.12458.</p>
-              </div>
-           </div>
-
-       <div class="container_col_gray2" id="mob"><h4><b>Data sources for MOBILITY table</h4></b> </div>
-       <div class="container_col">
-           <p>
-             We have included or currently working on including the following sources:
-           </p>
-         <table class="table">
-             <tr>
-               <th>Source</th>
-               <th>Source code</th>
-               <th>Features</th>
-               <th>Terms of Use</th>
-             </tr>
-             <tr>
-               <td><a href="https://www.google.com/covid19/mobility/">Google COVID-19 Community Mobility Reports</a></td>
-               <td>GOOGLE_MOBILITY</td>
-              <td>transit_stations, residential, workplace, parks, retail_recreation, grocery farmacy</td>
-              <td><a href="https://www.google.com/help/terms_maps/?hl=en">Attribution required</a></td>
-             </tr>
-             <tr>
-               <td><a href="https://www.apple.com/covid19/mobility">Apple Mobility Trends Reports</a></td>
-               <td>APPLE_MOBILITY</td>
-               <td>driving, walking, transit</td>
-              <td><a href="https://www.apple.com/covid19/mobility">Attribution required</a></td>
-             </tr>
-           </table>
-         </div>
-
-       <div class="container_col_gray2" id="wea"><h4><b>Data sources for WEATHER table</h4></b> </div>
-       <div class="container_col">
-           <p>
-             We have included or currently working on including the following sources:
-           </p>
-         <table class="table">
-             <tr>
-               <th>Source</th>
-               <th>Example Features</th>
-               <th>Terms of Use</th>
-             </tr>
-             <tr>
-               <td><a href="https://www.informaticslab.co.uk/">Met Office Informatics LAB</a></td>
-               <td>precip_max_avg, temperature_max_avg, windspeed_max_avg</td>
-               <td><a href="https://github.com/informatics-lab/covid19-dataset-documentation/blob/master/open_LICENCE.txt">Open Government Licence v3.0</a></td>
-             </tr>
-           </table>
-         </div>
-
-
+<div class="container_col_gray2" id="epi"><h4><b>Data sources for EPIDEMIOLOGY table</h4></b> </div>
+<div class="container_col">
+    <p>
+        We have included or currently working on including the following sources:
+    </p>
+    <table class="table">
+        <tr>
+            <th>Country</th>
+            <th>Source code</th>
+            <th>Source</th>
+            <th>Features</th>
+            <th>Terms of Use</th>
+        </tr>
+
+        <tr>
+            <td>World</td>
+            <td>WRD_ECDC</td>
+            <td>
+                <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European
+                    Centre for Disease Prevention and Control</a></td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://www.ecdc.europa.eu/en/copyright">ECDC Copyright</a></td>
+        </tr>
+
+        <tr>
+            <td>Argentina</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, ecovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Australia</td>
+            <td>AUS_C1A</td>
+            <td><a href="https://github.com/covid-19-au/covid-19-au.github.io">covid-19-au</a></td>
+            <td>tested, confirmed, dead,recovered, hospitalised, hospitalised_icu</td>
+            <td><a href="https://github.com/covid-19-au/covid-19-au.github.io">For educational and academic research
+                purposes</a></td>
+        </tr>
+
+        <tr>
+            <td>Austria</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>tested, confirmed, dead, recovered, hospitalised, hospitalised_icu</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Belgium</td>
+            <td>BEL_LE</td>
+            <td><a href="https://github.com/eschnou/covid19-be">covid19-be</a></td>
+            <td>tested, confirmed, dead, recovered, hospitalised, hospitalised_icu</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">CC0 1.0 Universal</a></td>
+        </tr>
+
+        <tr>
+            <td>Brazil</td>
+            <td>BRA_MSHM</td>
+            <td><a href="https://github.com/elhenrico/covid19-Brazil-timeseries">covid19-Brazil-timeseries</a></td>
+            <td>confirmed (country-level), dead (country-level, adm_area_1)</td>
+            <td>
+                <a href="https://github.com/elhenrico/covid19-Brazil-timeseries/blob/master/README.md#public-domain-and-open-data">Public
+                    Domain</a></td>
+        </tr>
+
+        <tr>
+            <td>Brazil</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Canada</td>
+            <td>CAN_GOV</td>
+            <td><a href="https://www.canada.ca/en/public-health.html">Public Health Canada</a></td>
+            <td>tested, confirmed, dead, recovered</td>
+            <td><a href="https://www.canada.ca/en/transparency/terms.html">Attribution required</a></td>
+        </tr>
+
+        <tr>
+            <td>Chile</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>China</td>
+            <td>CHN_ICL</td>
+            <td><a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/">Imperial College
+                London, COVID-19 Response Team</a></td>
+            <td>confirmed, dead, recovered</td>
+            <td>with permission</td>
+        </tr>
+
+        <tr>
+            <td>Czech Republic</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Dominican Republic</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Ecuador</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>France</td>
+            <td>FRA_SPFCG</td>
+            <td><a href="https://github.com/cedricguadalupe/FRANCE-COVID-19">Cédric Guadalupe (Agence Regionale de Sante
+                and others)</a></td>
+            <td>confirmed, recovered, dead</td>
+            <td><a href="https://github.com/cedricguadalupe/FRANCE-COVID-19/blob/master/LICENSE">GPL 3.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Germany</td>
+            <td>DEU_JPGG</td>
+            <td><a href="https://github.com/jgehrcke/covid-19-germany-gae">Jan-Philip Gehrcke (Gesundheitsaemter)</a>
+            </td>
+            <td>confirmed, dead</td>
+            <td><a href="https://github.com/jgehrcke/covid-19-germany-gae/blob/master/LICENSE  ">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Germany</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed, dead</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Hungary</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed, dead, recovered, tested, quarantined</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>India</td>
+            <td>IND_COVIND</td>
+            <td><a href="https://api.covid19india.org/">COVID19india</a></td>
+            <td>tested, confirmed, recovered, dead</td>
+            <td><a href="https://github.com/covid19india/api/blob/master/LICENSE">GPL 3.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Indonesia</td>
+            <td>IDN_GTPPC</td>
+            <td><a href="https://covid19.go.id/">COVID19.go</a></td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="">-</a></td>
+        </tr>
+
+        <tr>
+            <td>Ireland</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Italy</td>
+            <td>ITA_PC</td>
+            <td><a href="https://github.com/pcm-dpc/COVID-19">Protezione Civile</a></td>
+            <td>tested, confirmed, recovered, dead, hospitalised, ICU, quarantined</td>
+            <td><a href="https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE">CC BY 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Italy</td>
+            <td>ITA_PCDM</td>
+            <td><a href="https://github.com/DavideMagno/ItalianCovidData">Davide Magno (Protezione Civile)</a></td>
+            <td>tested, confirmed, dead, recovered, hospitalised, ICU, quarantined</td>
+            <td><a href="https://github.com/DavideMagno/ItalianCovidData/blob/master/LICENSE">CC0 1.0 Universal</a>
+            <td>
+        </tr>
+
+        <tr>
+            <td>Japan</td>
+            <td>JPN_C1JACD</td>
+            <td><a href="https://github.com/code4sabae/covid19">code4sabae/covid19s</a></td>
+            <td>tested, confirmed, recovered, dead, hospitalised, hospitalised_icu</td>
+            <td><a href="https://github.com/code4sabae/covid19">CC BY</a></td>
+        </tr>
+
+        <tr>
+            <td>Malaysia</td>
+            <td>MYS_MSYS</td>
+            <td><a href="https://github.com/ynshung/covid-19-malaysia">covid-19-malaysia</a></td>
+            <td>confirmed (country-level, adm_area_1), dead (country-level), hospitalised (country-level)</td>
+            <td><a href="https://github.com/ynshung/covid-19-malaysia/blob/master/LICENSE">Public Domain Dedication and
+                License v1.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Mexico</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Netherlands</td>
+            <td>NLD_CW</td>
+            <td><a href="https://github.com/J535D165/CoronaWatchNL/tree/master/data">CoronaWatchNL</a></td>
+            <td>confirmed (country-level), dead (country-level), hospitalised (country-level)</td>
+            <td><a href="https://github.com/J535D165/CoronaWatchNL">CC0</a></td>
+        </tr>
+
+        <tr>
+            <td>Nigeria</td>
+            <td>NGA_CDC</td>
+            <td><a href="https://covid19.ncdc.gov.ng/">covid19.ncdc.gov.ng</a></td>
+            <td>confirmed, recovered, dead</td>
+            <td><a href="">-</a></td>
+        </tr>
+
+
+        <tr>
+            <td>Norway</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Pakistan</td>
+            <td>PAK_GOV</td>
+            <td><a href="https://datastudio.google.com/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/kyNJB">National
+                Information Technology Boards</a></td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href=""></a></td>
+        </tr>
+
+        <tr>
+            <td>Peru</td>
+            <td>LAT_DSRP</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">covid-19_latinoamerica</a>
+            </td>
+            <td>confirmed, dead, recovered</td>
+            <td><a href="https://github.com/DataScienceResearchPeru/covid-19_latinoamerica">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Poland</td>
+            <td>POL_WIKI</td>
+            <td><a href="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Poland">Wikipedia</a></td>
+            <td>confirmed, dead</td>
+            <td><a href="https://www.wikidata.org/wiki/Wikidata:Licensing">CC0</a></td>
+        </tr>
+
+        <tr>
+            <td>Poland</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed, dead</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Portugal</td>
+            <td>POR_MSDS</td>
+            <td><a href="https://github.com/dssg-pt/covid19pt-data">dssg-pt</a></td>
+            <td>tested, confirmed, recovered, dead, hospitalised, ICU, quarantined</td>
+            <td><a href="https://github.com/dssg-pt/covid19pt-data">MIT</a></td>
+        </tr>
+
+
+        <tr>
+            <td>Slovenia</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>tested, confirmed, dead, hospitalised, hospitalised_icu</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Sweden</td>
+            <td>SWE_GM</td>
+            <td><a href="https://github.com/elinlutz/gatsby-map/tree/master/src/data/time_series">Elin Lütz</a></td>
+            <td>confirmed (country-level, adm_area_1), dead (country-level, adm_area_1)</td>
+            <td><a href="https://github.com/elinlutz/gatsby-map/blob/master/LICENSE">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>Sweden</td>
+            <td>SWE_SIR</td>
+            <td><a href="https://portal.icuregswe.org/siri/report/corona.inrapp">SIR</a></td>
+            <td>hospitalised_icu</td>
+            <td><a href="https://www.icuregswe.org/en/data--results/data-output-portal/">SIR Copyright</a></td>
+        </tr>
+
+        <tr>
+            <td>Sweden</td>
+            <td>EU_ZH</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data">COVID19 EU</a></td>
+            <td>confirmed, dead, hospitalised_icu</td>
+            <td><a href="https://github.com/covid19-eu-zh/covid19-eu-data/issues/57">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>South Korea</td>
+            <td>KOR_DS4C</td>
+            <td><a href="https://github.com/jihoo-kim/Data-Science-for-COVID-19"> Jihoo-Kim</a></td>
+            <td>tested, confirmed, recovered, dead</td>
+            <td><a href="https://github.com/jihoo-kim/Data-Science-for-COVID-19">CC BY-NC-SA 4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Spain</td>
+            <td>ESP_MSVP</td>
+            <td>
+                <a href="https://raw.githubusercontent.com/victorvicpal/COVID19_es/master/data/final_data/dataCOVID19_es.csv">Victor
+                    Vincente Palacios</a></td>
+            <td>confirmed, recovered, dead, hospitalised, ICU</td>
+            <td><a href="https://github.com/victorvicpal/COVID19_es/blob/master/LICENSE">Apache License 2.0</a></td>
+        </tr>
+
+        <tr>
+            <td>Thailand</td>
+            <td>THA_STAT</td>
+            <td><a href="https://covid19.th-stat.com/en/api">Department of Disease Control</a></td>
+            <td>confirmed, recovered, dead, hospitalised</td>
+            <td><a href="https://data.go.th/en/dataset/covid-19-daily">DGA Open Government License</a></td>
+        </tr>
+
+        <tr>
+            <td>Turkey</td>
+            <td>TUR_MHOE</td>
+            <td><a href="https://covid19.th-stat.com/en/api">Department of Disease Control</a></td>
+            <td>tested, cases, dead, recovered</td>
+            <td><a href="https://github.com/ozanerturk/covid19-turkey-api/blob/master/LICENSE">MIT</a></td>
+        </tr>
+
+        <tr>
+            <td>United Kingdom</td>
+            <td>GBR_PHTW</td>
+            <td><a href="https://github.com/tomwhite/covid-19-uk-data">Tom White</a></td>
+            <td>tested, confirmed, dead</td>
+            <td><a href="https://github.com/tomwhite/covid-19-uk-data/blob/master/LICENSE.txt">The Unlicense</a></td>
+        </tr>
+
+        <tr>
+            <td>United Kingdom</td>
+            <td>GBR_PHE</td>
+            <td><a href="https://coronavirus.data.gov.uk/">Public Health England</a></td>
+            <td>tested, confirmed, dead</td>
+            <td><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government
+                Licence v3.0 </a></td>
+        </tr>
+
+        <tr>
+            <td>United States</td>
+            <td>USA_CTP</td>
+            <td><a href="https://covidtracking.com/api">COVID Tracking Project</a></td>
+            <td>confirmed, dead</td>
+            <td><a href="https://covidtracking.com/license">CC BY-NC-4.0</a></td>
+        </tr>
+
+        <tr>
+            <td>United States</td>
+            <td>USA_NYT</td>
+            <td><a href="https://github.com/nytimes/covid-19-data">The New York Times</a></td>
+            <td>confirmed, dead</td>
+            <td><a href="https://github.com/nytimes/covid-19-data/blob/master/LICENSE">Attribution required,
+                non-commercial use</a></td>
+        </tr>
+    </table>
+</div>
+
+<div class="container_col_gray2" id="gov"><h4><b>Data sources for GOVERMENT_RESPONSE table</h4></b> </div>
+<div class="container_col">
+    <p>
+        We have included or currently working on including the following sources:
+    </p>
+    <table class="table">
+        <tr>
+            <th>Source</th>
+            <th>Example Features</th>
+            <th>Terms of Use</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.bsg.ox.ac.uk/research/research-projects/oxford-covid-19-government-response-tracker">
+                    Oxford COVID-19 government response tracker</a></td>
+            <td>SchoolClosing, WorkplaceClosing, CancelPublicEvents, ClosePublicTransport</td>
+            <td><a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/LICENSE.txt">CC BY 4.0</a></td>
+        </tr>
+    </table>
+    <div class="my_citation3">
+        <p>If you use GOVERNMENT_RESPONSE table please also cite:</p>
+
+        <p>Hale, Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government
+            Response Tracker, Blavatnik School of Government.</p>
+    </div>
+</div>
+
+<div class="container_col_gray2"><h4><b>Data sources for COUNTRY_STATISTICS table</h4></b> </div>
+<div class="container_col">
+    <p>
+        We have included or currently working on including the following sources:
+    </p>
+    <table class="table">
+        <tr>
+            <th>Source</th>
+            <th>Terms of Use</th>
+        </tr>
+        <tr>
+            <td><a href=""> World Bank</a></td>
+            <td><a href="https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets">CC BY 4.0</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.worldvaluessurvey.org/wvs.jsp"> World Value Survey</a></td>
+            <td>with permission</td>
+        </tr>
+        <tr>
+            <td><a href="https://europeanvaluesstudy.eu/">European Value Study</a></td>
+            <td>with permission</td>
+        </tr>
+    </table>
+    
+    <div class="my_citation3">
+        <p>If you use COUNTRY_STATISTICS table please also cite:</p>
+
+        <p>Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, M. Lagos,
+            P. Norris, E. Ponarin & B. Puranen et al. (eds.). 2014. World Values Survey: Round Six - Country-Pooled
+            Datafile Version: http://www.worldvaluessurvey.org/WVSDocumentationWV6.jsp.
+            Madrid: JD Systems Institute.</p>
+
+        <p>Gedeshi, Ilir, Zulehner, Paul M., Rotman, David, Swyngedouw, Marc, Voyé, Liliane, Fotev, Georgy, Baloban,
+            Josip,...(2016).
+            European Values Study 2008: Integrated Dataset (EVS 2008). GESIS Datenarchiv, Köln. ZA4800 Datenfile Version
+            4.0.0, https://doi.org/10.4232/1.12458.</p>
+    </div>
+</div>
+
+<div class="container_col_gray2" id="mob"><h4><b>Data sources for MOBILITY table</h4></b> </div>
+<div class="container_col">
+    <p>
+        We have included or currently working on including the following sources:
+    </p>
+    <table class="table">
+        <tr>
+            <th>Source</th>
+            <th>Source code</th>
+            <th>Features</th>
+            <th>Terms of Use</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.google.com/covid19/mobility/">Google COVID-19 Community Mobility Reports</a></td>
+            <td>GOOGLE_MOBILITY</td>
+            <td>transit_stations, residential, workplace, parks, retail_recreation, grocery farmacy</td>
+            <td><a href="https://www.google.com/help/terms_maps/?hl=en">Attribution required</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.apple.com/covid19/mobility">Apple Mobility Trends Reports</a></td>
+            <td>APPLE_MOBILITY</td>
+            <td>driving, walking, transit</td>
+            <td><a href="https://www.apple.com/covid19/mobility">Attribution required</a></td>
+        </tr>
+    </table>
+</div>
+
+<div class="container_col_gray2" id="wea"><h4><b>Data sources for WEATHER table</h4></b> </div>
+<div class="container_col">
+    <p>
+        We have included or currently working on including the following sources:
+    </p>
+    <table class="table">
+        <tr>
+            <th>Source</th>
+            <th>Example Features</th>
+            <th>Terms of Use</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.informaticslab.co.uk/">Met Office Informatics LAB</a></td>
+            <td>precip_max_avg, temperature_max_avg, windspeed_max_avg</td>
+            <td><a href="https://github.com/informatics-lab/covid19-dataset-documentation/blob/master/open_LICENCE.txt">Open
+                Government Licence v3.0</a></td>
+        </tr>
+    </table>
+</div>
