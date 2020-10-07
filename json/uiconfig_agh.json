@@ -10,7 +10,7 @@
                   "Name": "Administration Level 1",
                   "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/pol1.json.gz",
                   "populationData" : true
-                },           
+                }          
             ]
         },
         {
