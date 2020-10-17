@@ -10,20 +10,12 @@
                   "Name": "Administration Level 1",
                   "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/pol1.json.gz",
                   "populationData" : true
-                }          
-            ]
-        },
-        {
-            "Name" : "Poland",
-            "Longitude" : 19.1451,
-            "Latitude" :  51.9194,
-            "MapZoomLevel" : 6,
-            "AdminLevels" : [
+                },
                 { "Level" : 2,
                   "Name": "Administration Level 2",
                   "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/pol2.json.gz",
                   "populationData" : true
-                }          
+                }  
             ]
         },
         {
