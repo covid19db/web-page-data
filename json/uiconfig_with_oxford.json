@@ -1,0 +1,56 @@
+{
+    "Countries": [
+        {
+            "Name" : "United Kingdom",
+            "Longitude" : -1.23, 
+            "Latitude" :  54.57,
+            "MapZoomLevel" : 6,
+            "AdminLevels" : [
+                { "Level" : 1,
+                  "Name": "Administration Level 1",
+                  "EpidemiologyFile" : "json/gbr1.json",
+                  "populationData" : true
+                },
+                { "Level" : 2,
+                  "Name": "Administration Level 2",
+                  "EpidemiologyFile" : "json/gbr2.json",
+                  "populationData" : false
+                },
+                { "Level" : 3,
+                  "Name": "Administration Level 3",
+                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/gbr3.json.gz",
+                  "populationData" : true,
+                  "default" : true
+                }
+            ]
+        },
+        {
+            "Name" : "World",
+            "Longitude" : 16.0, 
+            "Latitude" :  42.3,
+            "MapZoomLevel" : 2,
+            "AdminLevels" : [
+                { "Level" : 0,
+                  "Name": "Country Level",
+                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/wor0.json.gz",
+                  "populationData" : true,
+                  "default" : true
+                }
+            ]
+        },
+        {
+            "Name" : "Oxfordshire",
+            "Longitude" : -0.96, 
+            "Latitude" :  51.8,
+            "MapZoomLevel" : 10,
+            "AdminLevels" : [
+                { "Level" : 1,
+                  "Name": "Regional Level",
+                  "EpidemiologyFile" : "https://raw.githubusercontent.com/covid19db/web-page-data/master/json/msoa_oxfordshire.json.gz",
+                  "populationData" : true,
+                  "default" : true
+                }
+            ]
+        }        
+    ]
+}
