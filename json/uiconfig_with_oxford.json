@@ -40,9 +40,9 @@
         },
         {
             "Name" : "Oxfordshire",
-            "Longitude" : -0.96, 
+            "Longitude" : -0.93, 
             "Latitude" :  51.8,
-            "MapZoomLevel" : 10,
+            "MapZoomLevel" : 9,
             "AdminLevels" : [
                 { "Level" : 1,
                   "Name": "Regional Level",
