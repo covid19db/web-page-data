@@ -4,7 +4,7 @@
             "Name" : "Poland",
             "Longitude" : 19.1451,
             "Latitude" :  51.9194,
-            "MapZoomLevel" : 6,
+            "MapZoomLevel" : 7,
             "AdminLevels" : [
                 { "Level" : 1,
                   "Name": "Administration Level 1",
