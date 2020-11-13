@@ -5,6 +5,8 @@
             "Longitude" : 19.1451,
             "Latitude" :  51.9194,
             "MapZoomLevel" : 7,
+            "MaxBounds": [14.07452, 49.02739, 24.02998, 54.85153],
+            "MinZoom": 6,
             "AdminLevels" : [
                 { "Level" : 1,
                   "Name": "Administration Level 1",
@@ -23,6 +25,7 @@
             "Longitude" : 16.0,
             "Latitude" :  42.3,
             "MapZoomLevel" : 2,
+            "MinZoom": 2,
             "AdminLevels" : [
                 { "Level" : 0,
                   "Name": "Country Level",
