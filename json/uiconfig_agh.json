@@ -1,7 +1,7 @@
 {
     "Countries": [
         {
-            "Name" : "Poland",
+            "Name" : "Polska",
             "Longitude" : 19.1451,
             "Latitude" :  51.9194,
             "MapZoomLevel" : 7,
@@ -21,7 +21,7 @@
             ]
         },
         {
-            "Name" : "World",
+            "Name" : "Świat",
             "Longitude" : 16.0,
             "Latitude" :  42.3,
             "MapZoomLevel" : 2,
